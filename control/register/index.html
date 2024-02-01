@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../lineawesome/lineawesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../../bootstrap5/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../sweetalert/sweetalert/dist/sweetalert.min.js">
+
+<style>
+
+
+
+</style>
+</head>
+<body>
+    
+    <div class="cont ">
+        
+        <article>
+            <div class="container " style="  color:maroon">
+                <div class="row p-3">
+                    <div class="col-md-4 offset-md-4" style="border: 1px solid maroon; border-radius: 5%;">
+                        <h5 class="text-center  mb-3">Create Account</h5>
+                        <form action="../../saver/process.php" method="post">
+                            <div class="form-group">
+                                <label for="fullname" >Full Name</label>
+                                <input type="text" name="fullname" class="form-control mb-3">
+                            </div>
+                            <div class="form-group">
+                                <label for="username" >User Name</label>
+                                <input type="text" name="username" class="form-control mb-3">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" >Phone Number</label>
+                                <input type="text" name="phone" class="form-control mb-3">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" >Email</label>
+                                <input type="email" name="email" class="form-control mb-3">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" >Password</label>
+                                <input type="password" name="password" class="form-control mb-3">
+                            </div>
+                            <div class="form-group">
+                                <label for="workname">Comfirm Password</label>
+                                <input type="password" name="cpassword" class="form-control mb-3">
+        
+                            </div>
+                            <div class="form-group">
+                                <button name="btn_reg" class="btn btn-danger form-control mt-3">Register</button>
+                            </div>
+                            <p class="text-center ">If You Have an account Pleased <a style="color:black" href="../login/"><b>Login</b></a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</body>
+</html>

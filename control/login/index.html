@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../../style/index.css">
+    <link rel="stylesheet" href="../../bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../lineawesome/lineawesome/css/line-awesome.min.css">
+<style>
+    body{
+        background-image: linear-gradient(45deg, rgba(17, 9, 9, 0.5),rgba(194, 178, 178, 0.5)), url("../ace01560-7c78-4c49-aaa2-887f62288ac9.jpg.jpg");
+        background-repeat: round;
+        background-size: cover;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* text-align: center; */
+    }
+    h3{
+        font-family: monospac;
+        font-size: 50px;
+        color: white;
+        border: 2px solid white;
+        border-radius: 40px;
+        padding: 10px;
+        margin: 10px;
+
+    }
+    form{
+        color: white;
+    }
+    h5{
+        color: white;
+    }
+    form p{
+        color: white;
+    }
+    @media screen and (max-width:800px) {
+        #secondary{
+            display: none;
+        }
+    }
+
+
+</style>
+</head>
+<body>
+    
+    <div class="cont ">
+        <div class="col-md-6 " id="secondary">
+           
+            <h3>BUSINESS CENTER</h3>
+           
+        </div>
+        <article class="col-md-6 p-5">
+            <div class="container mt-5" style=" color:white">
+                <div class="row " style="border: 1px solid white; border-radius: 1%;">
+                    <span class="text-center" style="font-size: 50px;"><i class="la la-user-circle "></i></span>
+                    <div class=" " >
+                        <h5 class="text-center mb-3">User Login</h5>
+                        <form action="../../saver/login-process.php" method="post">
+                            <div class="form-group">
+                                <label for="workname" >User Name</label>
+                                <i class="la la-user"></i>
+                                <input type="text" name="username" class="form-control mb-3 " placeholder="Username">
+                               
+                            </div>
+                            <div class="form-group">
+                                <label for="workname">Password</label>
+                                <i class="la la-lock"></i>
+                                <input name="password" type="password" class="form-control mb-3" placeholder="Password">
+        
+                            </div>
+                            <div class="form-group">
+                                <button name="btn_login" class="btn btn-danger form-control mt-3">Send</button>
+                            </div>
+                            <p class="text-center">New User Pleased <a style="color:black" href="../register/">Register</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</body>
+</html>
